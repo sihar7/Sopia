@@ -368,7 +368,7 @@
         }
 
         .ucapan::before {
-            content: 'Klik Untuk Mencari';
+            content: 'Click to search';
             font-size: 12pt;
             width: 200px;
             height: 50px;
@@ -847,7 +847,7 @@
                     $('.ucapan').text('');
                     $('.ucapan *').remove();
                     $(".ucapan").append(
-                        "<input type='text' id='textcari' style='background:#00000000; width:300px; transform:translateX(-70px); color:#000; outline: none; box-sizing:border-box; border: 0px solid #000; font-size:20px' placeholder='Cari di sini' autofocus></input><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:90px; line-height:50px; position:absolute;' onclick='cariok()'>Cari</span><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:20px; line-height:50px; position:absolute;' onclick='caribatal()'>Batal</span>"
+                        "<input type='text' id='textcari' style='background:#00000000; width:300px; transform:translateX(-70px); color:#000; outline: none; box-sizing:border-box; border: 0px solid #000; font-size:20px' placeholder='Search Here' autofocus></input><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:90px; line-height:50px; position:absolute;' onclick='cariok()'>Search</span><span class='tombolcari'; style='transition: all ease 0.3s; border-radius:10px; width:60px; height:50px; top:calc(50% - 25px); right:20px; line-height:50px; position:absolute;' onclick='caribatal()'>Cancel</span>"
                     );
                     document.querySelector('#textcari').addEventListener('keyup', function (e) {
                         if (e.key === 'Enter') {
